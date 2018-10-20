@@ -1,19 +1,19 @@
 
-const mongoose = reqiure('mongoose'); 
-const Schema = mongoose.schema; 
+var mongoose = require("mongoose"); 
+const Schema = mongoose.Schema; 
 
 
-const CommentsSchema = new Schema({
+const CommentSchema = new Schema({
     //get comment's title
     title: String,
     // comments 
     body:String,
     //get the created date
-    dateCreated: date.now,
+    dateCreated: Date,
     //get the updated date
-    dateUpdated: date.now
+    dateUpdated: Date
 });
 
-const Comments = mongoose.model("Comments",CommentsSchema);
+const Comment = mongoose.model("Comment",CommentSchema);
 
-module.exports = Comments; 
+module.exports = Comment; 

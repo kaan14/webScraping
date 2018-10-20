@@ -1,6 +1,6 @@
 
 //require mangoose
-const mongoose = reqiure('mangoose'); 
+var mongoose = require("mongoose"); 
 
 //create the mangoose schema       
 const Schema = mongoose.Schema; 
@@ -11,16 +11,19 @@ const ArticleSchema = new Schema({
         type: String, 
         require: true,
     },
+    image: {
+        type: String,
+    },
 
     link: {
         type: String, 
-        require: true,
+        
     },
-    comments: {
+    comment: {
         type: Schema.Types.ObjectId,
-        ref: "Comments"
+        ref: "Comment"
     },
-    dateCreated: date.now,
+    dateCreated: Date,
     
 })
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body { background-color: #F2F6D0 }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      /* textarea #commentTitle,*/ #textBox textarea { 
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      /* textarea #comment {
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 id="newsTitle"></h1>
+      <a></a>
+      <div id="articles">
+      </div>
+
+      <div id="comments">
+
+      </div>
+      
+      <div id="textBox">
+            <textarea id="commentTitle" rows="4" cols="5" placeholder="Title" ></textarea>
+            <textarea id="comment" rows="8" cols="5" placeholder="Comment"></textarea>
+            <button id="submit" type="submit">Comment</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
