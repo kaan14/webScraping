@@ -43,13 +43,13 @@ app.get("/scrape", function (req, res) {
 
         $("article").each(function (result) {
             console.log(result)
-            
+
             result = {};
 
             result.image = $(this).children("div").find("img").attr("src");
             //console.log("this is link:" + result.image);
             if (result.image != null) {
-                
+
 
                 result.link = $(this).children("div").find("a").attr("href");
                 //console.log(result.link);
